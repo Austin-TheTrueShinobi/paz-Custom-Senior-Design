@@ -1,4 +1,14 @@
 # (PAZ) Perception for Autonomous Systems
+
+Commands to run as root:
+pip install opencv-python numpy tensorflow keras preprocessing
+WINDOWS: New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" `-Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+py setup.py install
+pip install pypaz --user
+
+To run the script(Need to rebuild if training is required):
+python demo.py
+
 [![Unit testing](https://github.com/oarriaga/paz/actions/workflows/python-package.yml/badge.svg)](https://github.com/oarriaga/paz/actions/workflows/python-package.yml)
 [![PyPI upload](https://github.com/oarriaga/paz/actions/workflows/python-publish.yml/badge.svg)](https://github.com/oarriaga/paz/actions/workflows/python-publish.yml)
 [![Publish Website](https://github.com/oarriaga/paz/actions/workflows/publish-website.yml/badge.svg)](https://github.com/oarriaga/paz/actions/workflows/publish-website.yml)
